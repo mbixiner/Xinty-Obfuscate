@@ -1,0 +1,14 @@
+# PE Executable Obfuscator
+# No external dependencies required - uses Python standard library only
+
+# Optional dependencies for enhanced functionality:
+# pefile>=2023.2.7  # For more advanced PE parsing (optional)
+# capstone>=5.0.0   # For disassembly capabilities (optional)
+# keystone-engine>=0.9.2  # For assembly capabilities (optional)
+
+# For testing and development:
+# pytest>=7.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+# requests
+

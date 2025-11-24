@@ -35,17 +35,6 @@ Obfuscated executables may be flagged by antivirus software as potentially suspi
 - **Anti-Debug Markers**: Adds markers to trigger anti-debugging tools
 - **Code Cave Filling**: Fills null byte regions with junk instructions
 
-### Advanced Obfuscation (`advanced_obfuscator.py`)
-- **Dead Code Insertion**: Inserts code that never executes
-- **Instruction Substitution**: Replaces instructions with equivalent opcodes
-- **Polymorphic Encryption**: Creates unique encryption for each obfuscation
-- **Control Flow Flattening**: Converts linear code into dispatcher pattern
-- **String Encryption**: Encrypts strings with XOR
-- **Anti-Disassembly Tricks**: Adds patterns that confuse disassemblers
-- **Opaque Predicates**: Adds always-true/false conditions
-- **Metamorphic Code**: Generates functionally equivalent but different code
-- **API Obfuscation**: Templates for dynamic API resolution
-
 ## 📋 Requirements
 
 ```bash
@@ -62,16 +51,7 @@ Or simply:
 
 ```bash
 # Obfuscate with all techniques
-python obfuscator.py input.exe
-
-# Specify output file
-python obfuscator.py input.exe -o protected.exe
-
-# Use specific techniques
-python obfuscator.py input.exe -t sections timestamp junk
-
-# See all options
-python obfuscator.py --help
+python obfuscator.py
 ```
 
 ### Available Techniques
@@ -86,13 +66,6 @@ python obfuscator.py --help
 | `checksum` | Modify checksum | ✅ Safe |
 | `anti-debug` | Add anti-debug markers | ✅ Safe |
 | `caves` | Fill code caves | ⚠️ Test First |
-
-### Advanced Obfuscator
-
-```bash
-# Run demonstration of advanced techniques
-python advanced_obfuscator.py
-```
 
 The advanced obfuscator is a demonstration of sophisticated techniques that would require full implementation with disassembly/reassembly capabilities.
 
@@ -205,8 +178,7 @@ The obfuscator parses the Windows Portable Executable (PE) format:
 obfuscated.exe
 
 # Test with different techniques
-python obfuscator.py test.exe -t sections timestamp
-python obfuscator.py test.exe -t junk caves
+python obfuscator.py
 ```
 
 ### Verification Steps
@@ -301,5 +273,6 @@ This obfuscator makes analysis more time-consuming but not impossible.
 ---
 
 **Remember**: Obfuscation is not a substitute for proper security practices. It's one layer in a defense-in-depth strategy.
+
 
 

